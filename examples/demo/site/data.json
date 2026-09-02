@@ -1,0 +1,3399 @@
+{
+  "generatedAt": "2024-06-15T12:00:00.000Z",
+  "site": {
+    "name": "Northwind",
+    "description": "Live status for Northwind's storefront, API, and payments.",
+    "logoText": "Northwind Status",
+    "supportUrl": "https://example.com/support"
+  },
+  "overallStatus": "up",
+  "services": [
+    {
+      "checkId": "storefront",
+      "name": "Storefront",
+      "group": "Web",
+      "currentStatus": "up",
+      "lastCheckedAt": "2024-06-15T12:00:00.000Z",
+      "latencyMs": 177,
+      "days": [
+        {
+          "date": "2024-03-18",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-31",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-06",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-15",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-16",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-17",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-18",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-06",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-15",
+          "totalChecks": 72,
+          "upCount": 53,
+          "degradedCount": 19,
+          "downCount": 0,
+          "status": "degraded",
+          "uptimeRatio": 0.7361111111111112
+        },
+        {
+          "date": "2024-05-16",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-17",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-18",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-31",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-06",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-15",
+          "totalChecks": 37,
+          "upCount": 37,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        }
+      ],
+      "windowUptimeRatio": 0.9970519782777347
+    },
+    {
+      "checkId": "checkout-api",
+      "name": "Checkout API",
+      "group": "API",
+      "currentStatus": "up",
+      "lastCheckedAt": "2024-06-15T12:00:00.000Z",
+      "latencyMs": 132,
+      "days": [
+        {
+          "date": "2024-03-18",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-31",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-06",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-15",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-16",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-17",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-18",
+          "totalChecks": 72,
+          "upCount": 65,
+          "degradedCount": 0,
+          "downCount": 7,
+          "status": "down",
+          "uptimeRatio": 0.9027777777777778
+        },
+        {
+          "date": "2024-04-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-06",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-15",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-16",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-17",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-18",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-31",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-06",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-15",
+          "totalChecks": 37,
+          "upCount": 27,
+          "degradedCount": 10,
+          "downCount": 0,
+          "status": "degraded",
+          "uptimeRatio": 0.7297297297297297
+        }
+      ],
+      "windowUptimeRatio": 0.9973622963537626
+    },
+    {
+      "checkId": "payments-webhook",
+      "name": "Payments webhook receiver",
+      "group": "API",
+      "currentStatus": "up",
+      "lastCheckedAt": "2024-06-15T12:00:00.000Z",
+      "latencyMs": 110,
+      "days": [
+        {
+          "date": "2024-03-18",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-31",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-06",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-15",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-16",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-17",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-18",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-06",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-15",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-16",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-17",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-18",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-31",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-06",
+          "totalChecks": 72,
+          "upCount": 67,
+          "degradedCount": 0,
+          "downCount": 5,
+          "status": "down",
+          "uptimeRatio": 0.9305555555555556
+        },
+        {
+          "date": "2024-06-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-15",
+          "totalChecks": 37,
+          "upCount": 37,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        }
+      ],
+      "windowUptimeRatio": 0.9992242048099301
+    },
+    {
+      "checkId": "cdn",
+      "name": "Asset CDN",
+      "group": "Infra",
+      "currentStatus": "up",
+      "lastCheckedAt": "2024-06-15T12:00:00.000Z",
+      "latencyMs": 59,
+      "days": [
+        {
+          "date": "2024-03-18",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-03-31",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-06",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-15",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-16",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-17",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-18",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-04-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-06",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-15",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-16",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-17",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-18",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-19",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-20",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-21",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-22",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-23",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-24",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-25",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-26",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-27",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-28",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-29",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-30",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-05-31",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-01",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-02",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-03",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-04",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-05",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-06",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-07",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-08",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-09",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-10",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-11",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-12",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-13",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-14",
+          "totalChecks": 72,
+          "upCount": 72,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        },
+        {
+          "date": "2024-06-15",
+          "totalChecks": 37,
+          "upCount": 37,
+          "degradedCount": 0,
+          "downCount": 0,
+          "status": "up",
+          "uptimeRatio": 1
+        }
+      ],
+      "windowUptimeRatio": 1
+    }
+  ],
+  "incidents": [
+    {
+      "id": "checkout-api-2024-06-15T06:00:00.000Z",
+      "checkId": "checkout-api",
+      "checkName": "Checkout API",
+      "group": "API",
+      "severity": "minor",
+      "startedAt": "2024-06-15T06:00:00.000Z",
+      "resolvedAt": "2024-06-15T09:20:00.000Z",
+      "worstStatus": "degraded",
+      "updates": [
+        {
+          "timestamp": "2024-06-15T06:00:00.000Z",
+          "state": "investigating",
+          "message": "Automated check \"Checkout API\" started reporting degraded."
+        },
+        {
+          "timestamp": "2024-06-15T09:20:00.000Z",
+          "state": "resolved",
+          "message": "Automated check \"Checkout API\" recovered to up."
+        }
+      ],
+      "affectedResultCount": 10,
+      "title": "Degraded performance: Checkout API",
+      "postmortem": null
+    },
+    {
+      "id": "payments-webhook-2024-06-06T09:00:00.000Z",
+      "checkId": "payments-webhook",
+      "checkName": "Payments webhook receiver",
+      "group": "API",
+      "severity": "major",
+      "startedAt": "2024-06-06T09:00:00.000Z",
+      "resolvedAt": "2024-06-06T10:40:00.000Z",
+      "worstStatus": "down",
+      "updates": [
+        {
+          "timestamp": "2024-06-06T09:00:00.000Z",
+          "state": "investigating",
+          "message": "Automated check \"Payments webhook receiver\" started reporting down."
+        },
+        {
+          "timestamp": "2024-06-06T10:40:00.000Z",
+          "state": "resolved",
+          "message": "Automated check \"Payments webhook receiver\" recovered to up."
+        }
+      ],
+      "affectedResultCount": 5,
+      "title": "Payments webhook receiver: brief 5xx spike",
+      "postmortem": "Summary: The webhook receiver returned 503s for roughly 90 minutes during a scheduled dependency upgrade.\n\nRoot cause: The upgrade rolled out with a health check that passed before the process had finished warming its connection pool, so early traffic was rejected.\n\nRemediation: The health check now waits for the connection pool to report ready before advertising itself as healthy."
+    },
+    {
+      "id": "storefront-2024-05-15T12:00:00.000Z",
+      "checkId": "storefront",
+      "checkName": "Storefront",
+      "group": "Web",
+      "severity": "minor",
+      "startedAt": "2024-05-15T12:00:00.000Z",
+      "resolvedAt": "2024-05-15T18:20:00.000Z",
+      "worstStatus": "degraded",
+      "updates": [
+        {
+          "timestamp": "2024-05-15T12:00:00.000Z",
+          "state": "investigating",
+          "message": "Automated check \"Storefront\" started reporting degraded."
+        },
+        {
+          "timestamp": "2024-05-15T18:20:00.000Z",
+          "state": "resolved",
+          "message": "Automated check \"Storefront\" recovered to up."
+        }
+      ],
+      "affectedResultCount": 19,
+      "title": "Degraded performance: Storefront",
+      "postmortem": null
+    },
+    {
+      "id": "checkout-api-2024-04-18T12:00:00.000Z",
+      "checkId": "checkout-api",
+      "checkName": "Checkout API",
+      "group": "API",
+      "severity": "critical",
+      "startedAt": "2024-04-18T12:00:00.000Z",
+      "resolvedAt": "2024-04-18T14:20:00.000Z",
+      "worstStatus": "down",
+      "updates": [
+        {
+          "timestamp": "2024-04-18T12:00:00.000Z",
+          "state": "investigating",
+          "message": "Automated check \"Checkout API\" started reporting down."
+        },
+        {
+          "timestamp": "2024-04-18T14:20:00.000Z",
+          "state": "resolved",
+          "message": "Automated check \"Checkout API\" recovered to up."
+        }
+      ],
+      "affectedResultCount": 7,
+      "title": "Checkout API outage: database failover",
+      "postmortem": "Summary: Checkout requests began failing for all customers after our primary database's automatic failover picked a replica that had not fully caught up on replication.\n\nRoot cause: A misconfigured replication lag alert meant on-call was not paged when the replica fell behind. When the primary failed a routine health check, the orchestrator promoted the lagging replica, which briefly rejected writes with schema mismatches.\n\nRemediation: We reconfigured the replication lag alert threshold from 60s to 10s, added a pre-promotion freshness check to the failover orchestrator, and added this exact scenario to our quarterly failover drill."
+    }
+  ],
+  "uptimeWindowDays": 90
+}

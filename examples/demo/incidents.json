@@ -1,0 +1,16 @@
+{
+  "incidents": [
+    {
+      "id": "checkout-api-2024-04-18T12:00:00.000Z",
+      "title": "Checkout API outage: database failover",
+      "severity": "critical",
+      "postmortem": "Summary: Checkout requests began failing for all customers after our primary database's automatic failover picked a replica that had not fully caught up on replication.\n\nRoot cause: A misconfigured replication lag alert meant on-call was not paged when the replica fell behind. When the primary failed a routine health check, the orchestrator promoted the lagging replica, which briefly rejected writes with schema mismatches.\n\nRemediation: We reconfigured the replication lag alert threshold from 60s to 10s, added a pre-promotion freshness check to the failover orchestrator, and added this exact scenario to our quarterly failover drill."
+    },
+    {
+      "id": "payments-webhook-2024-06-06T09:00:00.000Z",
+      "title": "Payments webhook receiver: brief 5xx spike",
+      "severity": "major",
+      "postmortem": "Summary: The webhook receiver returned 503s for roughly 90 minutes during a scheduled dependency upgrade.\n\nRoot cause: The upgrade rolled out with a health check that passed before the process had finished warming its connection pool, so early traffic was rejected.\n\nRemediation: The health check now waits for the connection pool to report ready before advertising itself as healthy."
+    }
+  ]
+}

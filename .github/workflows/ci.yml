@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: test (${{ matrix.os }}, node ${{ matrix.node }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node: [20]
+        include:
+          - os: ubuntu-latest
+            node: 18
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test with coverage
+        run: npm run coverage
+
+      - name: Build
+        run: npm run build
+
+      - name: Build the demo site (dogfoods the CLI + generator end to end)
+        run: npm run demo:build
+
+      - name: Format check
+        if: matrix.os == 'ubuntu-latest' && matrix.node == 20
+        run: npm run format
+
+      - name: Upload demo site artifact
+        if: matrix.os == 'ubuntu-latest' && matrix.node == 20
+        uses: actions/upload-artifact@v4
+        with:
+          name: demo-site
+          path: examples/demo/site
+          retention-days: 14

@@ -1,0 +1,8 @@
+dist
+dist-site
+coverage
+node_modules
+data
+examples/demo/site
+examples/demo/results.jsonl
+*.jsonl
