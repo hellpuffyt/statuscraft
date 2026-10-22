@@ -13,6 +13,7 @@
       "name": "Storefront",
       "group": "Web",
       "currentStatus": "up",
+      "stale": false,
       "lastCheckedAt": "2024-06-15T12:00:00.000Z",
       "latencyMs": 177,
       "days": [
@@ -834,6 +835,7 @@
       "name": "Checkout API",
       "group": "API",
       "currentStatus": "up",
+      "stale": false,
       "lastCheckedAt": "2024-06-15T12:00:00.000Z",
       "latencyMs": 132,
       "days": [
@@ -1655,6 +1657,7 @@
       "name": "Payments webhook receiver",
       "group": "API",
       "currentStatus": "up",
+      "stale": false,
       "lastCheckedAt": "2024-06-15T12:00:00.000Z",
       "latencyMs": 110,
       "days": [
@@ -2476,6 +2479,7 @@
       "name": "Asset CDN",
       "group": "Infra",
       "currentStatus": "up",
+      "stale": false,
       "lastCheckedAt": "2024-06-15T12:00:00.000Z",
       "latencyMs": 59,
       "days": [

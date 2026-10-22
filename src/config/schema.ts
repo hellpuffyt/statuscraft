@@ -47,6 +47,7 @@ export const configSchema = z.object({
   intervalMinutes: z.number().positive().optional(),
   checks: z.array(checkDefinitionSchema).min(1),
   uptimeWindowDays: z.number().int().positive().max(365).optional(),
+  staleAfterMinutes: z.number().positive().optional(),
 });
 
 export type ParsedConfig = z.infer<typeof configSchema>;

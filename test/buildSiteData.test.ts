@@ -35,9 +35,12 @@ describe("buildSiteData", () => {
 
   it("rolls per-service status up into overallStatus", () => {
     const now = new Date("2024-01-10T12:00:00Z");
+    // Fixture timestamps moved from 10:00 to 11:55 during the audit: results
+    // two hours old are now (correctly) stale under the default 15-minute
+    // limit, and this test is about roll-up, not staleness.
     const results = [
-      result("web", "2024-01-10T10:00:00Z", "up"),
-      result("api", "2024-01-10T10:00:00Z", "down"),
+      result("web", "2024-01-10T11:55:00Z", "up"),
+      result("api", "2024-01-10T11:55:00Z", "down"),
     ];
     const data = buildSiteData({ config, results, overlay: { incidents: [] }, now });
     expect(data.overallStatus).toBe("down");

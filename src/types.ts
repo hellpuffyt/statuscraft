@@ -105,6 +105,12 @@ export interface StatusCraftConfig {
   checks: CheckDefinition[];
   /** How many days of history to render as uptime bars. */
   uptimeWindowDays?: number;
+  /**
+   * A service whose newest result is older than this is shown as "unknown"
+   * (no recent data), never as its last observed status. Defaults to three
+   * check intervals (3 x intervalMinutes, i.e. 15 minutes by default).
+   */
+  staleAfterMinutes?: number;
 }
 
 /** The result of evaluating one assertion against a raw HTTP response. */
@@ -202,6 +208,8 @@ export interface ServiceSummary {
   name: string;
   group?: string;
   currentStatus: ServiceStatus;
+  /** True when results exist but the newest one is older than the staleness limit. */
+  stale: boolean;
   lastCheckedAt: string | null;
   latencyMs: number | null;
   days: DayBucket[];

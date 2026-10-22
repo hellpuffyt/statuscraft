@@ -3,6 +3,32 @@
 All notable changes to this project are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Fixed
+
+- The page no longer shows green from missing or stale data: a service whose
+  newest result is older than `staleAfterMinutes` (new, optional; default
+  three check intervals) is "No recent data"/unknown, and the banner only
+  says "All systems operational" when every service has a fresh `up`.
+- Result-log rows with an invalid status, timestamp or check id are skipped
+  and counted (warning from `generate`/`status`); rows dated more than five
+  minutes in the future never become the current status; results are
+  ordered by instant rather than by string.
+- Status and severity values are HTML-escaped in the generated page; an
+  invalid overlay timestamp no longer crashes `generate`.
+- `serve` no longer serves sibling directories that share the root's name
+  prefix, and binds to `127.0.0.1` only.
+- README quickstart: `npx statuscraft` does not work from a clone (the
+  package is not published and its bin is not linked); it now uses
+  `npm run build` and `node dist/cli.js`.
+- CI workflow token restricted to `contents: read`.
+
+### Added
+
+- `test/honesty.test.ts` regression suite, `SECURITY.md`, `.editorconfig`,
+  `docs/PRODUCTION_READINESS.md`.
+
 ## [1.0.0] - 2026-09-02
 
 ### Added

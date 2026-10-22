@@ -2,9 +2,6 @@
 import { Command } from "commander";
 import { access, mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { createServer } from "node:http";
-import { readFile as readFileFs } from "node:fs/promises";
-import { extname } from "node:path";
 import { loadConfig } from "./config/loadConfig.js";
 import { sampleConfig } from "./config/sampleConfig.js";
 import { runAllChecks } from "./checker/runner.js";
@@ -13,6 +10,7 @@ import { buildSiteData } from "./generator/buildSiteData.js";
 import { writeSite } from "./generator/writeSite.js";
 import { loadOverlay } from "./incidents/overlay.js";
 import { overallStatus } from "./store/aggregate.js";
+import { createStaticServer, SERVE_HOST } from "./serve.js";
 
 const program = new Command();
 
@@ -93,7 +91,8 @@ program
   .action(async (opts: { config: string; results: string; incidents: string; outDir: string }) => {
     const config = await loadConfig(resolve(opts.config));
     const store = new ResultStore(resolve(opts.results));
-    const results = await store.readAll();
+    const { results, skipped } = await store.readAllWithReport();
+    if (skipped > 0) console.error(`warning: skipped ${skipped} invalid line(s) in ${store.path}`);
     const overlay = await loadOverlay(resolve(opts.incidents));
 
     const data = buildSiteData({ config, results, overlay });
@@ -107,13 +106,6 @@ program
     );
   });
 
-const MIME: Record<string, string> = {
-  ".html": "text/html; charset=utf-8",
-  ".css": "text/css; charset=utf-8",
-  ".js": "text/javascript; charset=utf-8",
-  ".json": "application/json; charset=utf-8",
-};
-
 program
   .command("serve")
   .description("Serve a generated static site directory for local preview")
@@ -126,27 +118,10 @@ program
       process.exitCode = 1;
       return;
     }
-    const server = createServer((req, res) => {
-      void (async () => {
-        const urlPath = (req.url ?? "/").split("?")[0] as string;
-        const relative = urlPath === "/" ? "/index.html" : urlPath;
-        const filePath = resolve(root + relative);
-        if (!filePath.startsWith(root)) {
-          res.writeHead(403).end("Forbidden");
-          return;
-        }
-        try {
-          const body = await readFileFs(filePath);
-          const type = MIME[extname(filePath)] ?? "application/octet-stream";
-          res.writeHead(200, { "Content-Type": type }).end(body);
-        } catch {
-          res.writeHead(404).end("Not found");
-        }
-      })();
-    });
+    const server = createStaticServer(root);
     const port = Number(opts.port);
-    server.listen(port, () => {
-      console.log(`Serving ${root} at http://localhost:${port}`);
+    server.listen(port, SERVE_HOST, () => {
+      console.log(`Serving ${root} at http://${SERVE_HOST}:${port}`);
     });
   });
 
@@ -158,7 +133,8 @@ program
   .action(async (opts: { config: string; results: string }) => {
     const config = await loadConfig(resolve(opts.config));
     const store = new ResultStore(resolve(opts.results));
-    const results = await store.readAll();
+    const { results, skipped } = await store.readAllWithReport();
+    if (skipped > 0) console.error(`warning: skipped ${skipped} invalid line(s) in ${store.path}`);
     const data = buildSiteData({ config, results, overlay: { incidents: [] } });
     console.log(overallStatus(data.services));
   });

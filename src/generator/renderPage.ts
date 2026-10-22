@@ -2,8 +2,8 @@ import type { EnrichedIncident, GeneratedSiteData, ServiceSummary } from "../typ
 import { escapeHtml, renderPostmortem } from "./templates/escape.js";
 import { formatDuration, formatPercent, formatTimestamp, statusLabel } from "./format.js";
 
-function bannerMessage(status: string, siteName: string): string {
-  switch (status) {
+function bannerMessage(data: GeneratedSiteData): string {
+  switch (data.overallStatus) {
     case "up":
       return "All systems operational";
     case "degraded":
@@ -11,8 +11,14 @@ function bannerMessage(status: string, siteName: string): string {
     case "down":
       return "Some systems are down";
     default:
-      return `No check results yet for ${siteName}`;
+      return data.services.some((s) => s.lastCheckedAt !== null)
+        ? "Status unknown: some systems have no recent check results"
+        : `No check results yet for ${data.site.name}`;
   }
+}
+
+function serviceLabel(service: ServiceSummary): string {
+  return service.stale ? "No recent data" : statusLabel(service.currentStatus);
 }
 
 function renderUptimeBars(service: ServiceSummary): string {
@@ -23,7 +29,7 @@ function renderUptimeBars(service: ServiceSummary): string {
           ? ` (${formatPercent(day.uptimeRatio)} uptime, ${day.totalChecks} checks)`
           : " (no data)"
       }`;
-      return `<div class="bar status-${day.status}" title="${escapeHtml(title)}"></div>`;
+      return `<div class="bar status-${escapeHtml(day.status)}" title="${escapeHtml(title)}"></div>`;
     })
     .join("");
   const first = service.days[0]?.date ?? "";
@@ -45,7 +51,9 @@ function renderService(service: ServiceSummary): string {
         </div>
         <div style="display:flex;align-items:center;gap:10px;">
           <span class="uptime-pct">${formatPercent(service.windowUptimeRatio)}</span>
-          <span class="badge status-${service.currentStatus}">${statusLabel(service.currentStatus)}</span>
+          <span class="badge status-${escapeHtml(service.currentStatus)}"${
+            service.stale ? ` title="Last check: ${escapeHtml(formatTimestamp(service.lastCheckedAt))}"` : ""
+          }>${escapeHtml(serviceLabel(service))}</span>
         </div>
       </div>
       ${renderUptimeBars(service)}
@@ -72,7 +80,7 @@ function renderIncident(incident: EnrichedIncident): string {
     <div class="incident">
       <div class="incident-head">
         <span class="incident-title">${escapeHtml(incident.title)}</span>
-        <span class="severity severity-${incident.severity}">${incident.severity}</span>
+        <span class="severity severity-${escapeHtml(incident.severity)}">${escapeHtml(incident.severity)}</span>
       </div>
       <div class="incident-meta">
         ${incident.resolvedAt ? "Resolved" : "Ongoing"} · started ${formatTimestamp(incident.startedAt)} ·
@@ -116,9 +124,9 @@ export function renderPage(data: GeneratedSiteData): string {
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">🌓 Theme</button>
   </div>
 
-  <div class="banner status-${data.overallStatus}">
-    <span class="dot status-${data.overallStatus}"></span>
-    <span>${escapeHtml(bannerMessage(data.overallStatus, data.site.name))}</span>
+  <div class="banner status-${escapeHtml(data.overallStatus)}">
+    <span class="dot status-${escapeHtml(data.overallStatus)}"></span>
+    <span>${escapeHtml(bannerMessage(data))}</span>
   </div>
 
   <section>
