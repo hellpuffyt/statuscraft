@@ -53,14 +53,30 @@ export function bucketByDay(results: CheckResult[], windowDays: number, windowEn
   return days;
 }
 
+/** Results timestamped further than this into the future are never used as "current". */
+export const MAX_CLOCK_SKEW_MS = 5 * 60_000;
+
+/**
+ * Summarizes one check. When `staleAfterMs` is given, a newest result older
+ * than that (relative to `windowEnd`) makes the service "unknown" with
+ * `stale: true`: the last observation is history, not the current state, so
+ * an old "up" must never be rendered as operational.
+ */
 export function summarizeService(
   check: CheckDefinition,
   results: CheckResult[],
   windowDays: number,
   windowEnd: Date,
+  staleAfterMs?: number,
 ): ServiceSummary {
-  const sorted = [...results].sort((a, b) => a.timestamp.localeCompare(b.timestamp));
-  const last = sorted.at(-1) ?? null;
+  const nowMs = windowEnd.getTime();
+  const sorted = results
+    .filter((r) => Number.isFinite(Date.parse(r.timestamp)))
+    .sort((a, b) => Date.parse(a.timestamp) - Date.parse(b.timestamp));
+  const observed = sorted.filter((r) => Date.parse(r.timestamp) <= nowMs + MAX_CLOCK_SKEW_MS);
+  const last = observed.at(-1) ?? null;
+  const stale =
+    last !== null && staleAfterMs !== undefined && nowMs - Date.parse(last.timestamp) > staleAfterMs;
   const days = bucketByDay(sorted, windowDays, windowEnd);
 
   const totalUp = days.reduce((sum, d) => sum + d.upCount, 0);
@@ -70,7 +86,8 @@ export function summarizeService(
     checkId: check.id,
     name: check.name,
     group: check.group,
-    currentStatus: last ? last.status : "unknown",
+    currentStatus: last && !stale ? last.status : "unknown",
+    stale,
     lastCheckedAt: last ? last.timestamp : null,
     latencyMs: last ? last.latencyMs : null,
     days,
@@ -78,12 +95,16 @@ export function summarizeService(
   };
 }
 
-/** Rolls per-service statuses up into one page-level status. */
+/**
+ * Rolls per-service statuses up into one page-level status. "up" requires
+ * every service to be up: a service with no (recent) data makes the page
+ * "unknown", because the page cannot claim it is operational.
+ */
 export function overallStatus(services: ServiceSummary[]): ServiceStatus {
   if (services.length === 0) return "unknown";
   const statuses = services.map((s) => s.currentStatus);
   if (statuses.some((s) => s === "down")) return "down";
   if (statuses.some((s) => s === "degraded")) return "degraded";
-  if (statuses.every((s) => s === "unknown")) return "unknown";
+  if (statuses.some((s) => s === "unknown")) return "unknown";
   return "up";
 }

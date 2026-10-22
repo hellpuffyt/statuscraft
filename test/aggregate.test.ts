@@ -103,6 +103,7 @@ describe("overallStatus", () => {
       checkId: "x",
       name: "x",
       currentStatus,
+      stale: false,
       lastCheckedAt: null,
       latencyMs: null,
       days: [],
@@ -130,7 +131,10 @@ describe("overallStatus", () => {
     expect(overallStatus([svc("unknown"), svc("unknown")])).toBe("unknown");
   });
 
-  it("is up when mixed up/unknown with nothing worse", () => {
-    expect(overallStatus([svc("up"), svc("unknown")])).toBe("up");
+  // Changed during the production-readiness audit: this used to expect "up",
+  // which rendered "All systems operational" while a service had no data —
+  // the exact green-on-missing-data the README promises never to show.
+  it("is unknown (not up) when mixed up/unknown with nothing worse", () => {
+    expect(overallStatus([svc("up"), svc("unknown")])).toBe("unknown");
   });
 });

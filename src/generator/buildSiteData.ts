@@ -12,6 +12,13 @@ export interface BuildSiteDataOptions {
 }
 
 const DEFAULT_WINDOW_DAYS = 90;
+const DEFAULT_INTERVAL_MINUTES = 5;
+
+/** Staleness limit: explicit `staleAfterMinutes`, else three check intervals. */
+export function staleAfterMs(config: StatusCraftConfig): number {
+  const minutes = config.staleAfterMinutes ?? 3 * (config.intervalMinutes ?? DEFAULT_INTERVAL_MINUTES);
+  return minutes * 60_000;
+}
 
 /** Pure function: config + the full result history -> everything the page needs. */
 export function buildSiteData(options: BuildSiteDataOptions): GeneratedSiteData {
@@ -27,7 +34,7 @@ export function buildSiteData(options: BuildSiteDataOptions): GeneratedSiteData 
   }
 
   const services = config.checks.map((check) =>
-    summarizeService(check, resultsByCheckId.get(check.id) ?? [], windowDays, now),
+    summarizeService(check, resultsByCheckId.get(check.id) ?? [], windowDays, now, staleAfterMs(config)),
   );
 
   const detected = detectAllIncidents(config.checks, resultsByCheckId);

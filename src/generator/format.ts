@@ -6,6 +6,7 @@ export function formatPercent(ratio: number | null): string {
 export function formatTimestamp(iso: string | null): string {
   if (!iso) return "never";
   const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "invalid date";
   return d.toISOString().replace("T", " ").slice(0, 19) + " UTC";
 }
 
