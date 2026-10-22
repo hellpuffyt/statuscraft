@@ -23,32 +23,32 @@ has `init`, `check`, `generate`, `serve` (local preview) and `status`.
 
 Fresh clone of the audit branch, README commands literally:
 
-| Command | Exit | Result |
-|---|---|---|
-| `npm install` | 0 | |
-| `npm run build` | 0 | |
-| `node dist/cli.js init` | 0 | wrote `statuscraft.config.json` |
-| `node dist/cli.js check --once` | 0 | Marketing site UP, Public API DOWN (`example.com/api/health` is 404, as the README now says) |
-| `node dist/cli.js generate` | 0 | overall `down`, 1 incident |
-| `node dist/cli.js serve` + GET `/` | — | 200 on `127.0.0.1:4321`; stopped afterwards |
-| `npm test` | 0 | 144 passed |
-| `npm run coverage`, `lint`, `typecheck`, `demo:build` | 0 | |
+| Command                                               | Exit | Result                                                                                       |
+| ----------------------------------------------------- | ---- | -------------------------------------------------------------------------------------------- |
+| `npm install`                                         | 0    |                                                                                              |
+| `npm run build`                                       | 0    |                                                                                              |
+| `node dist/cli.js init`                               | 0    | wrote `statuscraft.config.json`                                                              |
+| `node dist/cli.js check --once`                       | 0    | Marketing site UP, Public API DOWN (`example.com/api/health` is 404, as the README now says) |
+| `node dist/cli.js generate`                           | 0    | overall `down`, 1 incident                                                                   |
+| `node dist/cli.js serve` + GET `/`                    | —    | 200 on `127.0.0.1:4321`; stopped afterwards                                                  |
+| `npm test`                                            | 0    | 144 passed                                                                                   |
+| `npm run coverage`, `lint`, `typecheck`, `demo:build` | 0    |                                                                                              |
 
 ## Commands and results (working clone, same steps as CI)
 
-| Check | Command | Before audit | After audit |
-|---|---|---|---|
-| Install | `npm ci` | 0 | 0 |
-| Typecheck | `npm run typecheck` | 0 | 0 |
-| Lint | `npm run lint` | 0 | 0 |
-| Tests + coverage | `npm run coverage` | 0 — 14 files, 127 passed | 0 — 15 files, 144 passed, 0 failed, 0 skipped; statements 99.08%, branches 96.16% |
-| Build | `npm run build` | 0 | 0 |
-| Demo build | `npm run demo:build` | 0, deterministic | 0, deterministic (only `data.json` gains `"stale": false`) |
-| Format | `npm run format` | 0 | 0 |
-| README quickstart from a clone | `npx statuscraft init` | fails: `sh: statuscraft: command not found` | replaced by `node dist/cli.js ...`, passes |
-| Browser render | `serve` the demo + headless Chromium; and a generated page with one stale service | — | renders, no console errors, no other-origin requests; stale page shows "Status unknown" banner and "No recent data" badge |
-| Runtime dependency audit | `npm audit --omit=dev` | 0 | 0 |
-| Full audit | `npm audit` | dev-only: critical/high in vitest 2, vite, esbuild, typescript-eslint 7 chain | brace-expansion and source-map-js fixed; the rest need major upgrades (vitest 5, typescript-eslint 8) and are not done |
+| Check                          | Command                                                                           | Before audit                                                                  | After audit                                                                                                               |
+| ------------------------------ | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Install                        | `npm ci`                                                                          | 0                                                                             | 0                                                                                                                         |
+| Typecheck                      | `npm run typecheck`                                                               | 0                                                                             | 0                                                                                                                         |
+| Lint                           | `npm run lint`                                                                    | 0                                                                             | 0                                                                                                                         |
+| Tests + coverage               | `npm run coverage`                                                                | 0 — 14 files, 127 passed                                                      | 0 — 15 files, 144 passed, 0 failed, 0 skipped; statements 99.08%, branches 96.16%                                         |
+| Build                          | `npm run build`                                                                   | 0                                                                             | 0                                                                                                                         |
+| Demo build                     | `npm run demo:build`                                                              | 0, deterministic                                                              | 0, deterministic (only `data.json` gains `"stale": false`)                                                                |
+| Format                         | `npm run format`                                                                  | 0                                                                             | 0                                                                                                                         |
+| README quickstart from a clone | `npx statuscraft init`                                                            | fails: `sh: statuscraft: command not found`                                   | replaced by `node dist/cli.js ...`, passes                                                                                |
+| Browser render                 | `serve` the demo + headless Chromium; and a generated page with one stale service | —                                                                             | renders, no console errors, no other-origin requests; stale page shows "Status unknown" banner and "No recent data" badge |
+| Runtime dependency audit       | `npm audit --omit=dev`                                                            | 0                                                                             | 0                                                                                                                         |
+| Full audit                     | `npm audit`                                                                       | dev-only: critical/high in vitest 2, vite, esbuild, typescript-eslint 7 chain | brace-expansion and source-map-js fixed; the rest need major upgrades (vitest 5, typescript-eslint 8) and are not done    |
 
 ## CI status
 
@@ -109,18 +109,18 @@ Regression tests: `test/honesty.test.ts` (21 tests) covers 1–7.
 
 ## Acceptance checklist
 
-| # | Item | Expected | Command / test | Result | Actual | Reference |
-|---|---|---|---|---|---|---|
-| 1 | Missing data | Service with no results is never green; page not "operational" | `honesty.test.ts` "never green on missing data" | pass | unknown + "Status unknown" banner | `aggregate.ts`, `renderPage.ts` |
-| 2 | Stale data | Newest result older than limit → unknown/"No recent data" | "never green on stale data" + CLI run | pass | | `aggregate.ts`, `buildSiteData.ts` |
-| 3 | Future / mis-ordered rows | Cannot override current status | "future-dated or out-of-order rows" | pass | | `aggregate.ts` |
-| 4 | Malformed rows | Skipped and counted, never set status | "result store rejects rows" + CLI warning | pass | 7 of 8 rows skipped | `resultStore.ts` |
-| 5 | Degraded vs down | Only latency produces degraded | `statusEngine.test.ts` | pass | | `statusEngine.ts` |
-| 6 | Incidents derived, overlay cannot invent | Unknown overlay ids ignored | `overlay.test.ts`, `detector.test.ts` | pass | | `incidents/` |
-| 7 | Deterministic output | Same inputs → same page | `npm run demo:build` twice, no diff | pass | | `buildSiteData.ts` |
-| 8 | No markup injection | Escaped output | "no markup injection" | pass | | `renderPage.ts`, `escape.ts` |
-| 9 | `serve` containment | No reads outside root, loopback bind | "serve stays inside" (raw HTTP) | pass | 403 | `serve.ts` |
-| 10 | Quickstart from a clone | README steps work | clean clone | pass | see above | `README.md` |
+| #   | Item                                     | Expected                                                       | Command / test                                  | Result | Actual                            | Reference                          |
+| --- | ---------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------- | ------ | --------------------------------- | ---------------------------------- |
+| 1   | Missing data                             | Service with no results is never green; page not "operational" | `honesty.test.ts` "never green on missing data" | pass   | unknown + "Status unknown" banner | `aggregate.ts`, `renderPage.ts`    |
+| 2   | Stale data                               | Newest result older than limit → unknown/"No recent data"      | "never green on stale data" + CLI run           | pass   |                                   | `aggregate.ts`, `buildSiteData.ts` |
+| 3   | Future / mis-ordered rows                | Cannot override current status                                 | "future-dated or out-of-order rows"             | pass   |                                   | `aggregate.ts`                     |
+| 4   | Malformed rows                           | Skipped and counted, never set status                          | "result store rejects rows" + CLI warning       | pass   | 7 of 8 rows skipped               | `resultStore.ts`                   |
+| 5   | Degraded vs down                         | Only latency produces degraded                                 | `statusEngine.test.ts`                          | pass   |                                   | `statusEngine.ts`                  |
+| 6   | Incidents derived, overlay cannot invent | Unknown overlay ids ignored                                    | `overlay.test.ts`, `detector.test.ts`           | pass   |                                   | `incidents/`                       |
+| 7   | Deterministic output                     | Same inputs → same page                                        | `npm run demo:build` twice, no diff             | pass   |                                   | `buildSiteData.ts`                 |
+| 8   | No markup injection                      | Escaped output                                                 | "no markup injection"                           | pass   |                                   | `renderPage.ts`, `escape.ts`       |
+| 9   | `serve` containment                      | No reads outside root, loopback bind                           | "serve stays inside" (raw HTTP)                 | pass   | 403                               | `serve.ts`                         |
+| 10  | Quickstart from a clone                  | README steps work                                              | clean clone                                     | pass   | see above                         | `README.md`                        |
 
 ## Further testing needs
 
