@@ -17,8 +17,8 @@ observe it.
 The screenshots above are the real output of `npm run demo:build` — a
 seeded, deterministic fixture checked into [`examples/demo/`](examples/demo).
 Open `examples/demo/site/index.html` in a browser to click through it
-yourself, or run `npm run demo:build && npx statuscraft serve -d
-examples/demo/site`.
+yourself, or run `npm run demo:build && npm run build && node dist/cli.js
+serve -d examples/demo/site`.
 
 ## Why this exists
 
@@ -57,18 +57,28 @@ overlay)` to the page. Nothing about "current status" is stored anywhere
 
 ```bash
 npm install
-npx statuscraft init                       # writes statuscraft.config.json
-npx statuscraft check --once               # runs every configured check once
-npx statuscraft generate                   # builds dist-site/index.html
-npx statuscraft serve                      # preview it at http://localhost:4321
+npm run build                              # compiles the CLI to dist/
+node dist/cli.js init                      # writes statuscraft.config.json
+node dist/cli.js check --once              # runs every configured check once
+node dist/cli.js generate                  # builds dist-site/index.html
+node dist/cli.js serve                     # preview it at http://127.0.0.1:4321
 ```
+
+statuscraft is not published to npm, and the `statuscraft` name on the npm
+registry belongs to an unrelated project — run the CLI from this checkout
+(`node dist/cli.js`, or `npm run dev -- <command>` to run from source), not
+with `npx statuscraft` elsewhere. `serve` binds to `127.0.0.1` only.
+
+The sample config from `init` points at `example.com`, so its checks really
+go over the network; `/api/health` there returns 404, so expect that check
+to be reported `down`.
 
 Run checks on a loop instead of once, then regenerate on a cron:
 
 ```bash
-npx statuscraft check                      # runs forever on `intervalMinutes`
+node dist/cli.js check                     # runs forever on `intervalMinutes`
 # ...separately, whenever you want to publish...
-npx statuscraft generate
+node dist/cli.js generate
 ```
 
 ### Configuring checks
@@ -80,6 +90,7 @@ npx statuscraft generate
   "site": { "name": "Acme", "description": "Live status for Acme's public APIs." },
   "intervalMinutes": 5,
   "uptimeWindowDays": 90,
+  "staleAfterMinutes": 15,
   "checks": [
     {
       "id": "public-api",
@@ -101,6 +112,17 @@ Assertion kinds: `status` (exact code or `[min, max]` range), `maxLatencyMs`
 produce `degraded`; every other assertion is pass/fail), `bodyContains`,
 `bodyNotContains`, `bodyMatches` (regex), `jsonPath` (dot-path equality
 against a parsed JSON body), and `headerEquals`.
+
+**Missing and stale data are never green.** A service with no results is
+shown as "No data yet", and a service whose newest result is older than
+`staleAfterMinutes` (default: three check intervals, i.e. 15 minutes with
+the default `intervalMinutes: 5`) is shown as "No recent data" — its last
+observed status is history, not the current state. The page banner only
+says "All systems operational" when every service has a fresh `up`
+result. Rows in the result log that are not valid observations (unknown
+status, unparseable timestamp, missing check id) are skipped and counted in
+a warning by `generate`/`status`, and rows dated more than five minutes in
+the future are never used as the current status.
 
 **How degraded differs from down:** a non-latency assertion failing (wrong
 status code, missing text, a network error) is always `down`. Latency past
@@ -170,7 +192,7 @@ with hand-built result arrays instead of running real HTTP checks.
 ## Development
 
 ```bash
-npm test           # vitest — 127 tests
+npm test           # vitest — 144 tests
 npm run coverage   # ~99% statement coverage
 npm run lint       # eslint --max-warnings=0
 npm run typecheck  # tsc --noEmit, strict
@@ -180,6 +202,10 @@ npm run demo:build # regenerate examples/demo/ from a seeded fixture
 
 CI (`.github/workflows/ci.yml`) runs typecheck, lint, tests with coverage,
 build, and a full demo-site build on Ubuntu, Windows, and macOS.
+
+`test/honesty.test.ts` is the "refuses to lie" regression suite: missing,
+stale, future-dated and malformed data must never produce a green page, and
+values from the result log or the incident overlay must never inject markup.
 
 ## License
 
