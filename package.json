@@ -4,7 +4,7 @@
   "description": "A status page generator that refuses to lie: every status is derived from real synthetic-check results with a full audit trail.",
   "type": "module",
   "license": "MIT",
-  "author": "Prabesh Sharma <hellpuffyyt@gmail.com>",
+  "author": "Prabesh Sharma",
   "bin": {
     "statuscraft": "./dist/cli.js"
   },
