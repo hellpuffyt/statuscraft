@@ -192,7 +192,7 @@ with hand-built result arrays instead of running real HTTP checks.
 ## Development
 
 ```bash
-npm test           # vitest — 144 tests
+npm test           # vitest — 145 tests
 npm run coverage   # ~99% statement coverage
 npm run lint       # eslint --max-warnings=0
 npm run typecheck  # tsc --noEmit, strict
