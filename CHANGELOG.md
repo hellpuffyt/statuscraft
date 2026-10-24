@@ -11,7 +11,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   reached end-of-life on 2025-04-30 and has been dropped from the CI matrix.
 - Dev tooling: `vitest` and `@vitest/coverage-v8` 4.1, which clears the
   dev-only critical/high advisories in the vitest 1/2 chain (`tinypool`,
-  `@vitest/mocker`, `vite-node`, ...). `npm audit` now reports 0 vulnerabilities.
+  a nested `vite`, `vite-node`, `@vitest/mocker`, `esbuild`). `npm audit` now reports 0 vulnerabilities.
   No runtime dependency or published behaviour changed.
 
 ### Security
