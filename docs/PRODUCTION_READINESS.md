@@ -13,9 +13,10 @@ has `init`, `check`, `generate`, `serve` (local preview) and `status`.
 
 ## Platforms and prerequisites
 
-- Node >= 18.18 (`engines`), npm. Verified locally on macOS 27 (Apple M5),
+- Node >= 20 (`engines`; Node 18, end-of-life, was dropped with the vitest 4
+  upgrade), npm. Verified locally on macOS 27 (Apple M5),
   Node 24.19.0, npm 11.17.0.
-- Default-branch CI runs Ubuntu/Windows/macOS on Node 20 plus Ubuntu Node 18.
+- CI runs Ubuntu/Windows/macOS on Node 20.
   Windows and Node 18/20 were not run locally for this audit.
 - `check` needs outbound network access to the configured URLs.
 

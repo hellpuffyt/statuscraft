@@ -5,6 +5,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **Node.js 20 or newer is now required** (`engines.node` is `>=20`). Node 18
+  reached end-of-life on 2025-04-30 and has been dropped from the CI matrix.
+- Dev tooling: `vitest` and `@vitest/coverage-v8` 4.1, which clears the
+  dev-only critical/high advisories in the vitest 1/2 chain (`tinypool`,
+  `@vitest/mocker`, `vite-node`, ...). `npm audit` now reports 0 vulnerabilities.
+  No runtime dependency or published behaviour changed.
+
 ### Security
 
 - Upgraded `zod` from 3.x to 4.x (GHSA-mrhx-c7xc-m3w5, memory exhaustion
