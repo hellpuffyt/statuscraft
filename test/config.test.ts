@@ -34,6 +34,15 @@ describe("configSchema", () => {
     expect(configSchema.safeParse(bad).success).toBe(false);
   });
 
+  it("accepts string request headers and rejects non-string header values", () => {
+    const withHeaders = (headers: unknown) => ({
+      ...sampleConfig,
+      checks: [{ ...sampleConfig.checks[0], headers }],
+    });
+    expect(configSchema.safeParse(withHeaders({ authorization: "Bearer x" })).success).toBe(true);
+    expect(configSchema.safeParse(withHeaders({ "x-retries": 3 })).success).toBe(false);
+  });
+
   it("requires site.name", () => {
     const bad = { ...sampleConfig, site: { description: "no name" } };
     expect(configSchema.safeParse(bad).success).toBe(false);
