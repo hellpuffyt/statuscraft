@@ -30,7 +30,7 @@ const checkDefinitionSchema = z.object({
   group: z.string().min(1).optional(),
   url: z.string().url(),
   method: z.enum(["GET", "HEAD", "POST"]).optional(),
-  headers: z.record(z.string()).optional(),
+  headers: z.record(z.string(), z.string()).optional(),
   body: z.string().optional(),
   timeoutMs: z.number().positive().optional(),
   assertions: z.array(assertionSchema).min(1),

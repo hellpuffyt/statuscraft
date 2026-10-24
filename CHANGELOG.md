@@ -5,6 +5,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Security
+
+- Upgraded `zod` from 3.x to 4.x (GHSA-mrhx-c7xc-m3w5, memory exhaustion
+  validating oversized constrained collections; no 3.x fix exists). Config
+  validation behaviour is unchanged; error wording follows zod 4.
+
 ### Fixed
 
 - The page no longer shows green from missing or stale data: a service whose
