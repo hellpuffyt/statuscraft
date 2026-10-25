@@ -55,6 +55,8 @@ overlay)` to the page. Nothing about "current status" is stored anywhere
 
 ## Quickstart
 
+Requires Node.js 20 or newer.
+
 ```bash
 npm install
 npm run build                              # compiles the CLI to dist/
