@@ -11,21 +11,30 @@ admin panel with a dropdown that lets you type "Operational" over an outage.
 If you want the page to say something, a synthetic check has to actually
 observe it.
 
-<p align="center">
-  <img src="docs/screenshots/dark.png" width="49%" alt="statuscraft status page, dark theme">
-  <img src="docs/screenshots/light.png" width="49%" alt="statuscraft status page, light theme">
-</p>
+## Screenshots
+
+<img src="docs/screenshots/status-page-desktop-dark.webp" width="100%" alt="statuscraft demo status page in dark theme: All systems operational banner, four services with 90-day uptime bars, and the start of the derived incident history">
+
+The generated demo page (`npm run demo:build`, served with `node dist/cli.js
+serve -d examples/demo/site`) at 1440px in dark theme. A
+[full-page capture](docs/screenshots/dark.png) shows the incident timeline and
+postmortems further down.
 
 <p align="center">
-  <img src="docs/assets/status-page-mobile.webp" width="32%" alt="statuscraft demo status page on a 390px-wide phone screen, dark theme">
+  <img src="docs/screenshots/status-page-desktop-light.webp" width="66%" alt="The same statuscraft demo page in light theme">
+  <img src="docs/assets/status-page-mobile.webp" width="22%" alt="statuscraft demo status page on a 390px-wide phone screen, dark theme">
 </p>
 
-These are real screenshots of the output of `npm run demo:build`, a seeded,
-deterministic fixture checked into [`examples/demo/`](examples/demo) (full
-page in dark and light, and the same page at phone width). Open
-`examples/demo/site/index.html` in a browser to click through it yourself, or
-run `npm run demo:build && npm run build && node dist/cli.js serve -d
-examples/demo/site`.
+The same page in light theme ([full page](docs/screenshots/light.png)) and at
+phone width. All of these come from a seeded, deterministic fixture checked
+into [`examples/demo/`](examples/demo); open
+`examples/demo/site/index.html` in a browser to click through it yourself.
+
+<img src="docs/screenshots/cli-init-check-generate.png" width="100%" alt="Terminal capture: statuscraft init writes a config, check --once reports Marketing site UP and Public API DOWN against example.com, generate builds the page with overall status down and one incident, status prints down">
+
+A real terminal run of the quickstart below in an empty directory. The
+sample config's `/api/health` check really fails against example.com, so
+the page and `status` report `down` and one incident is derived from it.
 
 ## Status
 
@@ -89,25 +98,25 @@ with `npx statuscraft` elsewhere. `serve` binds to `127.0.0.1` only.
 
 The sample config from `init` points at `example.com`, so its checks really
 go over the network; `/api/health` there returns 404, so expect that check
-to be reported `down`. A run on a fresh directory looks like this (latencies
-and timestamps will differ):
+to be reported `down`. A run in an empty directory (the one in the terminal capture above;
+latencies and timestamps will differ):
 
-```text
+```console
 $ node dist/cli.js init
-Wrote /path/to/statuscraft.config.json
+Wrote /private/tmp/statuscraft-demo/statuscraft.config.json
 Next: statuscraft check --once, then statuscraft generate
 $ node dist/cli.js check --once
-[2026-10-26T06:56:37.322Z] ran 2 check(s)
-  UP       Marketing site (399ms)
-  DOWN     Public API (371ms)
+[2026-10-26T07:08:01.001Z] ran 2 check(s)
+  UP       Marketing site (373ms)
+  DOWN     Public API (290ms)
 $ node dist/cli.js generate
-Generated /path/to/dist-site/index.html
+Generated /private/tmp/statuscraft-demo/dist-site/index.html
 Overall status: down
 Services: 2, incidents: 1, results read: 2
 $ node dist/cli.js status
 down
 $ node dist/cli.js serve
-Serving /path/to/dist-site at http://127.0.0.1:4321
+Serving /private/tmp/statuscraft-demo/dist-site at http://127.0.0.1:4321
 ```
 
 The `Next:` hint printed by `init` uses the `statuscraft` bin name; from a
